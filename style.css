@@ -9,6 +9,7 @@
 
 a {
     text-decoration: none;
+    color: white;
 }
 
 ul {
@@ -16,7 +17,6 @@ ul {
 }
 
 .active {
-    color: #fc036b;
     text-decoration: underline;
     font-weight: bold;
 }
@@ -34,7 +34,6 @@ html {
     width: 100%;
     justify-content: space-between;
     padding: 20px;
-    color: black;
 }
 
 .nav-links {
@@ -43,13 +42,13 @@ html {
 }
 
 .nav-links li {
-    margin: 0 30px;
+    margin: 0 30px;   
 }
 
 header {
     width: 100vw;
     height: 100vh;
-    background-image: url('main1.jpg');
+    background-image: url('header-bg.png');
     background-position: bottom;
     background-size: cover;
     display: flex;
@@ -98,7 +97,7 @@ header {
 }
 
 .logo {
-    color: #fc036b;
+    color: white;
 }
 
 section {
@@ -110,9 +109,9 @@ section {
     text-align: center;
     font-size: 4vmin;
     color: #49497e;
-}
+} 
 
-.row {
+ .row {
     display: flex;
     align-items: center;
     width: 100%;
@@ -147,7 +146,7 @@ p {
 .explore {
     width: 100%;
     height: 100vh;
-    background-image: url('main2.jpeg');
+    background-image: url('bg2.png');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -229,10 +228,10 @@ p {
 
 .footer {
     color: whitesmoke;
-    margin: 20px auto;
+    /* margin: 20px auto; */
 }
 
-@media only screen and (max-width: 850px) {
+ @media only screen and (max-width: 850px) {
     .menu-btn {
         display: block;
     }
@@ -303,11 +302,50 @@ p {
         padding: 10px;
     }
 
+} 
+@media only screen and (max-width: 856px){
+    .image-gallery{
+        flex-direction: row-reverse;
+    }
+ }
+
+@media only screen and (max-width: 912px){
+    .image-gallery{
+        flex-direction: row-reverse;
+    }
+    .explore{
+        justify-content: center;
+    }
+    .explore-content h1{
+        text-align: center;
+    }
+
+}
+@media only screen and (max-width: 1024px){
+    .image-gallery{
+        flex-direction: row-reverse;
+    }
+    .explore{
+        justify-content: center;
+    }
+    .explore-content h1{
+        text-align: center;
+
+    }
+}
+@media only screen and (max-width: 853px){
+    .explore{
+        justify-content: center;
+    }
+    .explore-content h1{
+        text-align: center;
+    }
 }
 
 /* Animation*/
 img {
     transition: transform .3s ease;
+    width: 86%;
 }
 
 img:hover {
@@ -323,4 +361,4 @@ img:hover {
 li:hover {
     color: #fc036b;
     cursor: pointer;
-}
+} 
